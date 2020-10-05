@@ -33,8 +33,8 @@ void setup()
 
 void loop()
 {
-  if(!digitalRead(CAN0_INT))                         // If CAN0_INT pin is low, read receive buffer
+  if(!digitalRead(CAN0_INT))                         // 
   {
-	CAN.sendMsgBuf(INT8U id, INT8U ext, INT8U len, data_buf);
+	CAN.sendMsgBuf(INT8U id, INT8U ext, INT8U len, msgString);
   }
 }
